@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Staggered layout animation: each card appears 120ms after the previous -->
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/item_slide_up"
+    android:animationOrder="normal"
+    android:delay="15%"/>

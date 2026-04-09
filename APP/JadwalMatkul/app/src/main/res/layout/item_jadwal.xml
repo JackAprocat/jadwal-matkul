@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="12dp" android:layout_marginVertical="6dp" app:cardCornerRadius="18dp" app:cardBackgroundColor="@color/colorBgCard" app:cardElevation="8dp" android:outlineSpotShadowColor="@color/colorAccent" android:outlineAmbientShadowColor="@color/colorAccent" tools:targetApi="p">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <!-- Header Card (color depends on jenis) -->
+        <LinearLayout android:id="@+id/headerCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="14dp" android:paddingVertical="10dp" android:gravity="center_vertical" android:background="#6200EE">
+
+            <!-- Matkul name shown in header (full, no ellipsis) -->
+            <TextView android:id="@+id/tvJenisBadge" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Nama Matkul" android:textColor="#FFFFFF" android:textSize="13sp" android:textStyle="bold" android:paddingEnd="8dp"/>
+
+            <!-- Waktu: solid pill, no transparent box -->
+            <TextView android:id="@+id/tvWaktu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08.00 - 08.40" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" android:background="@drawable/bg_day_active" android:paddingHorizontal="10dp" android:paddingVertical="4dp"/>
+        </LinearLayout>
+
+        <!-- Body Card -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+
+            <!-- Jam -->
+            <TextView android:id="@+id/tvJam" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jam 1" android:textColor="@color/colorAccent" android:textSize="11sp" android:layout_marginBottom="4dp"/>
+
+            <!-- Matkul -->
+            <TextView android:id="@+id/tvMatkul" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nama Matakuliah" android:textColor="@color/colorTextPrimary" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+
+            <!-- Dosen row -->
+            <LinearLayout android:id="@+id/rowDosen" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_dosen" android:contentDescription="Dosen"/>
+
+                <TextView android:id="@+id/tvDosen" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dosen: Nama Dosen" android:textColor="@color/colorTextSecondary" android:textSize="13sp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+            <!-- Ruang row -->
+            <LinearLayout android:id="@+id/rowRuang" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_ruangan" android:contentDescription="Ruangan"/>
+
+                <TextView android:id="@+id/tvRuang" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ruangan: -" android:textColor="@color/colorTextSecondary" android:textSize="13sp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+            <!-- Jenis row -->
+            <LinearLayout android:id="@+id/rowJenis" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:visibility="gone">
+
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_jenis" android:contentDescription="Jenis"/>
+
+                <TextView android:id="@+id/tvJenis" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jenis: -" android:textColor="@color/colorTextSecondary" android:textSize="13sp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

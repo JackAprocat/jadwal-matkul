@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardCornerRadius="18dp" app:cardBackgroundColor="@color/colorBgKelasCard" app:cardElevation="8dp" android:outlineSpotShadowColor="@color/colorAccent" android:outlineAmbientShadowColor="@color/colorAccent" tools:targetApi="p">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+
+        <!-- Icon -->
+        <LinearLayout android:id="@+id/iconContainer" android:layout_width="52dp" android:layout_height="52dp" android:background="@drawable/bg_icon_kelas" android:gravity="center">
+
+            <ImageView android:id="@+id/ivIcon" android:layout_width="30dp" android:layout_height="30dp" android:src="@android:drawable/ic_menu_agenda" android:contentDescription="Icon Kelas" android:tint="@color/white"/>
+        </LinearLayout>
+
+        <!-- Nama Kelas -->
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+
+            <TextView android:id="@+id/tvNamaKelas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kelas 1AKA" android:textColor="@color/colorTextPrimary" android:textSize="18sp" android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lihat jadwal perkuliahan" android:textColor="@color/colorTextSecondary" android:textSize="13sp"/>
+        </LinearLayout>
+
+        <!-- Arrow -->
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@android:drawable/ic_media_play" android:contentDescription="Arrow" android:tint="@color/colorAccent" android:alpha="0.8"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

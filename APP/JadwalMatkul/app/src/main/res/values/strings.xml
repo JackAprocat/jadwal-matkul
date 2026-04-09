@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AK25</string>
+    <string name="header_title">AK25 Jadwal Kuliah</string>
+    <string name="settings_content_description">Settings</string>
+    <string name="select_class_title">Pilih Kelas</string>
+</resources>
